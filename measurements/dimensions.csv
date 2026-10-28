@@ -1,0 +1,31 @@
+# Measurements — Raspberry Pi 3 Model B
+
+Геометрические параметры по официальному механическому чертежу Raspberry Pi 3 Model B
+(RP-008335-DS, PDF mechanical drawing; DXF: RP-008334-DS) и официальным данным Raspberry Pi.
+
+Примечание: чертёж RP-008335-DS содержит в основном векторную графику; автоматическое
+извлечение размеров ограничено. Значения ниже — из официальных источников; часть размеров
+(толщина платы, высоты компонентов) требует проверки по чертежу/физическому измерению.
+
+| parameter | value | unit | source | status |
+|---|---|---|---|---|
+| board_length | 85.0 | mm | Официальные данные Raspberry Pi 3 Model B; чертёж RP-008335-DS | confirmed |
+| board_width | 56.0 | mm | Официальные данные Raspberry Pi 3 Model B; чертёж RP-008335-DS | confirmed |
+| mounting_holes_count | 4 | шт | Чертёж RP-008335-DS | confirmed |
+| mounting_hole_diameter | 2.7 | mm | Чертёж RP-008335-DS (стандарт Raspberry Pi) | confirmed |
+| mounting_hole_offset_from_edge | 3.5 | mm | Стандарт Raspberry Pi (центры отверстий) | verify |
+| mounting_hole_spacing_x | 58.0 | mm | Стандарт Raspberry Pi (расстояние между центрами) | verify |
+| mounting_hole_spacing_y | 49.0 | mm | Стандарт Raspberry Pi (расстояние между центрами) | verify |
+| pcb_thickness | 1.4 (typ.) | mm | Чертёж RP-008335-DS | verify |
+| max_component_height | 16.0 | mm | Чертёж RP-008335-DS (зоны Z-Height: 16.0 / 13.5 / 8.5 / 6.5 / 5.5) | verify |
+| gpio_header_pitch | 2.54 | mm | Схема RPI-3B v1.2 (J8, 40W 0.1" pin header) | confirmed |
+| gpio_header_pins | 40 | шт | Схема RPI-3B v1.2 | confirmed |
+| csi_dsi_connector_pins | 15 | шт | Схема RPI-3B v1.2 | verify_photo |
+| hdmi_connector | 19-pin Type A | - | Официальные данные Raspberry Pi 3 Model B | confirmed |
+| micro_usb_connector | 5-pin micro-USB B | - | Схема RPI-3B v1.2 (J1/J4) | confirmed |
+| ethernet_port | RJ45, 10/100 Мбит/с | - | Официальные данные Raspberry Pi 3 Model B | confirmed |
+| usb_ports | 4 x USB 2.0 Type-A | - | Официальные данные Raspberry Pi 3 Model B | confirmed |
+| sd_card | microSD (нижняя сторона) | - | Официальные данные Raspberry Pi 3 Model B | confirmed |
+
+Позиции конкретных разъёмов и координаты компонентов — заполняются по результатам
+фотограмметрии и CAD-моделирования (связка с `bom/bom.csv` по позиционным обозначениям).
